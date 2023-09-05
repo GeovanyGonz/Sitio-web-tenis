@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Font Awesome</title>
+    <link rel="stylesheet" href="../css/contactanos.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="fas fa-bars"></span>
+        </div>
+
+        <div class="container-logo">
+            <img src="../img/logo-aguila.png" alt="">
+            <h1 class="logo"><a href="/"></a></h1>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Colecciones </a></li>
+                <li><a href="./caballeros.html">Tenis para Caballeros</a></li>
+                <li><a href="./damas.html">Tenis para damas</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="cards">
+            <div class="card">
+               <img src="../img/tenis-dama-xx.png" alt="Card 1">
+               <h3>Tenis Damas</h3>
+               <p>Nuestra mejor coleccion de tenis para damas y caballeros</p>
+            </div>
+      
+            <div class="card">
+               <img src="../img/tenis-caballeros-xxx.webp" alt="Card 1">
+               <h3>Tenis Caballeros</h3>
+               <p>Lo mejor en tenis para damas y caballeros con el mejor estilo para una ocasion deportiva y casual</p>
+            </div>
+      
+            <div class="card">
+               <img src="../img/tenis-dama-3.jpg" alt="Card 1">
+               <h3>Tenis damas</h3>                            
+               <p>Tenis BROOST siempre con con la mejor forma y estilo ergonomico</p>
+            </div>
+      
+            <div class="card">
+               <img src="../img/tenis-caballeros-xxxx.webp" alt="Card 1">
+               <h3>Tenis Caballeros</h3>
+               <p>No hay nada mejor como unos excelentes tenis para hacer ejercicios </p>
+            </div>
+        </section>
+
+        <h2>Contactanos</h2>
+        <form class="contact-section">
+            <label for="name">Nombre y apellido:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+           <input type="submit" value="Enviar">
+        </form>
+
+    </main>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        const mobileMenuButton = document.getElementById("mobile-menu");
+        mobileMenuButton.onclick = function() {
+            const nav = document.querySelector("nav");
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
