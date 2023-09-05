@@ -666,7 +666,7 @@ body {
 /* ********************************** */
 
 .footer {
-	background-color: var(--primary-color);
+	background-color: rgb(187, 167, 167);
 }
 
 .container-footer {
